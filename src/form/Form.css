@@ -1,0 +1,41 @@
+.form-container {
+  display: none;
+}
+
+.form-container--visible {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  width: 337px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.form__agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #000;
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.form__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #2581eb;
+}

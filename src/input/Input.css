@@ -1,0 +1,33 @@
+.form__input {
+  background: none;
+  border: 1px solid #f1f1f1;
+  border-radius: 14px;
+  padding: 10px 16px;
+  max-width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 157%;
+  color: #a7a7a7;
+  outline: none;
+}
+
+.form__input--error {
+  border: 1px solid #e53935;
+  background-color: #fff5f5;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  color: #000;
+}
+
+.form__required {
+  color: #ff6c2d;
+}
