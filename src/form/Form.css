@@ -39,3 +39,14 @@
   line-height: 157%;
   color: #2581eb;
 }
+
+@media (max-width: 959px) {
+  .form {
+    padding: 20px;
+  }
+
+  .form .btn-close {
+    top: 2px;
+    right: 7px;
+  }
+}

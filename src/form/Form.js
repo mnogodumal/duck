@@ -15,7 +15,8 @@ export function Form({ onSubmit, inputs }) {
     form.appendChild(element)
   })
 
-  form.appendChild(Button({ type: 'primary', text: 'Отправить' }))
+  const submitButton = Button({ type: 'primary', text: 'Отправить' })
+  form.appendChild(submitButton)
   const closeBtn = ButtonClose()
   closeBtn.addEventListener('click', () => {
     const container = document.querySelector('.form-container')
@@ -74,6 +75,9 @@ export function Form({ onSubmit, inputs }) {
     const data = Object.fromEntries(new FormData(form))
     onSubmit?.(form, data)
     form.reset()
+
+    const container = document.querySelector('.form-container')
+    container.classList.remove('form-container--visible')
   })
 
   return form

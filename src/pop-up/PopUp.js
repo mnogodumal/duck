@@ -1,6 +1,7 @@
 import './PopUp.css'
 import { ButtonClose } from '../button-close/ButtonClose'
 import { createNavLinks } from '../utils/createNavLinks'
+import { Button } from '../button/Button'
 
 export function PopUp() {
   const popup = document.createElement('div')
@@ -20,6 +21,20 @@ export function PopUp() {
 
   content.appendChild(closeBtn)
   content.appendChild(nav)
+
+  const callBtn = Button({
+    type: 'primary',
+    text: 'Заказать обратный звонок',
+    id: 'btn-open-form-pop'
+  })
+
+  callBtn.addEventListener('click', () => {
+    const container = document.querySelector('.form-container')
+    container.classList.add('form-container--visible')
+    close()
+  })
+
+  content.appendChild(callBtn)
 
   popup.appendChild(content)
 

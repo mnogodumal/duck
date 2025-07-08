@@ -45,7 +45,7 @@ button {
 }
 
 .container {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -104,6 +104,10 @@ header .btn-close {
   .header .nav-links {
     display: none;
   }
+
+  .nav-links {
+    align-items: center;
+  }
 }
 
 .nav-link {
@@ -117,6 +121,7 @@ header .btn-close {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: max-content;
 }
 
 .nav-link:hover::after {
